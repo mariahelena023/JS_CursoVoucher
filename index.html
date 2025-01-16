@@ -6,8 +6,19 @@
     <title>Document</title>
 </head>
 <body>
+
+    <button>clique aqui</button>
+
     <script>
-        console.log("Maria Helena");
+        console.log("Maria Helena")
+
+        //number 
+
+        //boolean
+
+        //null
+
+        //underfined
 
         //string
             var string1 = "maria"; //pode ser declarada com aspas duplas
@@ -16,34 +27,88 @@
             var idade = 16;
             var string3 = `maria tem ${idade} anos`; //pode ser declara com apostrofos
                                                 //template string (${}): quando queremos usar variáveis dentro de uma string      
-            console.log(string3);
+            console.log(string3)
 
             var numero1 = 1;
             var numero2 = 2;
 
             var soma = `${numero1} + ${numero2} = ${numero1 + numero2}`;
-            console.log(soma);
+            console.log(soma)
 
             var str1 = "1";
             var str2 = "2";
 
-            console.log(str1 + str2); //concatenação
-
-        //int 
-
-        //boolean
-
-        //float
+            console.log(str1 + str2) //concatenação
 
         //loop
             var array = [1, 2, 3, 4, 5];
 
             for(let numero of array){
                 console.log(numero)
-            };
+            }
 
-            //crie um algoritmo que inverta a poosição dos itens dentro de um array
-            ,
+            //crie um algoritmo que inverta a poosição dos itens dentro de um array e guarde eles em outro array
+            var invertedArray = [];
+
+            for (var i = array.length - 1; i >= 0; i--) {
+                invertedArray.push(array[i]);
+            }
+
+            console.log(invertedArray);
+
+        //variáveis
+            if(1 + 1 == 2){
+                var nome = "maria";
+                console.log(2)
+            }
+
+            let meunome = "maria";
+            meunome = "josevaldo";
+
+        
+
+            //falsy e truthy
+
+                var btn = document.querySelector("button");
+
+                console.log(btn)
+                var active = false;
+
+                if(btn){
+                    console.log("verdadeiro")
+                } else{
+                    console.log("falso")
+                }
+
+        //par ou ímpar
+            var num = 5;
+            if(num % 2 == 0){
+                console.log("par")
+            } else{
+                console.log("ímpar")
+            }
+
+            //ou
+
+            const parImpar = (num) => {
+                return num % 2 == 0 ? console.log("par") : console.log("ímpar");
+            }
+
+            //ou
+
+            const ParImpar = (num) => num % 2 == 0 ? console.log("par") : console.log("ímpar"); //operador ternário
+
+            //expoente
+            var expoente = 2 ** 2;
+            console.log(expoente)
+
+            //desafio
+            var num1 = 2;
+            var num2 = 2;
+
+            console.log(num1 + num2)
+
+
     </script>
 </body>
 </html>
